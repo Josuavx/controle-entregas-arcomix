@@ -1,0 +1,21 @@
+#card{
+  width: 325px;
+  height: 100px;
+  background-color: #012C71;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.header-card{
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+#description{
+  overflow: hidden;
+  margin-top: 6px;
+}
