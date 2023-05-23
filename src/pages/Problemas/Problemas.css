@@ -1,0 +1,47 @@
+*{
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  
+
+}
+
+#paginaProblema{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+#breadcrumb{
+  display: flex;
+  align-items: center;
+  margin: 5px 27px 9px 27px;
+  height: 40px; 
+  border-radius: 5px;
+  gap: 25px;
+  padding-left: 13px;
+  background-color: #012C71;
+}
+
+.bread:hover{
+  border-radius: 15px;
+  background-color: #39517694;
+}
+
+.bread{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95%;
+}
+
+#problemas{
+  background-color: #D9D9D9;
+  padding:25px 5px;
+  margin: 9px 27px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
