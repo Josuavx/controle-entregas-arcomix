@@ -1,8 +1,14 @@
-import "./App.css";
-import { Problemas } from "./pages/Problemas/Problemas";
+import './App.css';
+import Header from './Components/header/Header';
+import Footer from './Components/footer/Footer';
 
 function App() {
-  return <Problemas />;
+  return (
+    <div className="App">
+      <Header/>
+      <Footer/>
+    </div>
+  );
 }
 
 export default App;

@@ -1,0 +1,83 @@
+div {
+    width: 100%;
+    height: 10px;
+}
+
+#azul {
+    background: #34379E;
+    height: 48px;
+    display: flex;
+}
+
+#azul img {
+    position: absolute;
+    
+}
+
+#logo-arco {
+    max-width: 160px;
+    width: auto;
+    margin: 7px 0px 0px 15px;
+}
+
+#logo-nome {
+    max-width: 187px;
+    width: auto;
+    margin: 17px 0px 0px 180px;
+}
+
+#amarelo {
+    background: #F6DC06;
+    height: 1px;
+}
+
+#vermelho {
+    background: #ED3A27;
+    height: 24px;
+    box-shadow: inset 50px 4px 100px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu-perfil {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 15%;
+    height: 24px;
+    padding-right: 10px;
+}
+
+#menu-perfil img, p, select{
+    display: inline;
+    vertical-align:middle;
+}
+
+#menu-perfil img {
+    width: auto;
+    max-width: 22px;
+    filter: invert(100%);
+}
+
+#menu-perfil p {
+    margin: 10px;
+    color: #34379E;
+}
+
+#menu-perfil select {
+    margin-right: 0px;
+    margin-left: 10px;
+    height: 20px;
+    width: 80px;
+    padding: 1px;
+    background-color: #ed3b2700;
+    color: #34379E;
+    font-weight: bold;
+    border: none;
+}
+
+#menu-perfil select option {
+    background-color: #34379E;
+    color: white;
+}
+
