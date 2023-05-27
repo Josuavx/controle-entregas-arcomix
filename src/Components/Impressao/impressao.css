@@ -1,0 +1,21 @@
+.linha td {
+    text-align: center;
+    border: 2px solid white;
+    padding: 0.01%;
+}
+
+.linha tr {
+    text-align: left;
+}
+
+.linha .firsttd {
+    border-left: none;
+}
+
+.linha .lasttd {
+    border-right: none;
+}
+
+#check {
+    background: blue;
+}
