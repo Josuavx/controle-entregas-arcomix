@@ -1,0 +1,52 @@
+.navegacao {
+    background-color: #012C71;
+    width: 90vw;
+    height: 41px;
+    margin: 4px auto;
+    border-radius: 5px;
+    display: inline-flex;
+}
+
+.navegacao button {
+    margin-left: 8px;
+    background: #012C71;
+    border: none;
+    border-left: solid 1px white;
+    color: white;
+    font-weight: bold;
+}
+
+.navegacao button:last-child {
+    border-right: solid 1px white;
+}
+
+.impressoes {
+    background: rgba(217, 217, 217, 1);
+    width: fit-content;
+    height: 590px;
+    margin: 6px auto;
+    border-radius: 10px;
+}
+
+.impressoes table {
+    width: 90vw;    
+}
+
+.impressoes th {
+    padding: 0.25%;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border-left: solid white 2px;
+    background: #012C71;
+}
+
+#firstth {
+    border-top-left-radius: 10px;
+    border-left: none;
+}
+
+#lastth {
+    border-top-right-radius: 10px;
+    border-right: none;
+}

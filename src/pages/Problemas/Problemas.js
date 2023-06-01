@@ -1,4 +1,4 @@
-import { Problema } from "../../components/Problema/Problema";
+import { Problema } from "../../Components/Problema/Problema";
 import "./Problemas.css";
 
 export const Problemas = () => {
