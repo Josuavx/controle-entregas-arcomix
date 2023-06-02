@@ -1,0 +1,38 @@
+.formulario input {
+  padding: 20px;
+  height: 10px;
+  margin: 5px;
+  border: #5f5f5f 1.5px solid;
+  outline: none;
+  border-radius: 12px;
+  cursor: text;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+
+button {
+  padding: 18px;
+  height: 8px;
+  width: 25%;
+  margin-left: 37%;
+
+  background-color: #CC252B;
+  color: #fff;
+  border: #551c1c 1.5px solid;
+
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  margin-top: 5px !important;
+  cursor: pointer;
+}
+
+button p {
+  margin: -7px;
+}

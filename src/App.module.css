@@ -1,0 +1,63 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Inter";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+body{
+  color: #fff;  
+  
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.container .backgroundOne .logoclass {
+  width: 50%;
+}
+
+.backgroundOne {
+  width: 50%;
+  background-image: url("./img/backone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.backgroundTwo {
+  width: 50%;
+  background-image: url("./img/backtwo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.backgroundTwo h1 {
+  font-size: 37px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-align: center;
+ 
+}

@@ -1,0 +1,98 @@
+
+
+
+.login_container{  
+    
+    display: flex;
+    
+    padding:0;
+    margin:0;
+
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    
+    justify-content: center;
+    align-items: center;
+
+  }
+
+body{
+  color:#fff
+}
+
+
+h1 {
+  font-size: 37px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-align: center;  
+
+  font-size: 37px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+
+ .formulario input {
+    padding: 20px;
+    height: 10px;
+  
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    cursor: text;
+ 
+    
+  }
+  
+  
+  .formulario h4 {
+    margin-top: 15px;
+    margin-bottom: 3px;
+
+  }
+  
+::placeholder {
+    font-style: italic;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  
+ button{
+    padding: 18px;
+    height: 8px;
+  
+    color:#fff;
+
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+    margin-top: 40px;
+   
+  }
+  
+  button p{
+    margin: -7px;
+  }
+  
+  .btnEntrar{
+    background-color: #0A78BE;
+    border: #12163acb 1.5px solid;
+    width: 38%;
+    margin-left: 8px;
+  }
+  
+  .btnCadastro{
+    background-color: #CC252B;
+    border: #551c1c 1.5px solid;
+    width: 44%;
+    margin-left: 30px;
+  }
+  
+  

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styles from './App.module.css';
+import logo from './img/logo.png'
+import Login from './pages/login'
+//  import OpCadastro from './pages/OpCadastro' 
+/* import CadFornecedor from './pages/CadFornecedor'; */
+/* import CadFuncionario from './pages/CadFuncionario'; */
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function Background(){
+
+    
+    return(
+      
+      <div className={styles.container}>
+        <section className={styles.backgroundOne}>
+          <img className={styles.logoclass} src= {logo} alt="logo" /> {/* não consegui importa a imagem diretamente, apenas na variavel*/}
+        </section>
+        
+        <section className={styles.backgroundTwo}>
+          <Login /> 
+          {/*
+          <OpCadastro />
+          <CadFornecedor />
+          <CadFuncionario />
+          */}
+        </section>
+      </div>
+    )
 }
 
-export default App;
+export default Background

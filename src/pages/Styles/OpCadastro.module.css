@@ -1,0 +1,29 @@
+.OpCadastro_conteiner h1 {
+    font-size: 37px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+button {
+    padding: 18px;
+    width: 9vw;
+    margin: 40px;
+
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+    background-color: #CC252B;
+    color: #fff;
+    border: #551c1c 1.5px solid;
+
+}
+
+button p {
+    margin: -7px;
+}
