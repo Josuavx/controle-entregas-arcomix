@@ -43,7 +43,7 @@ export default function Impressoes() {
             dataHora: "01/06/2023 14:20",
             status: "Em andamento",
             isChecked: false
-        }/*,
+        },
         {
             codSolicitacao: "3456789",
             motorista: "Ricardo Souza",
@@ -602,51 +602,62 @@ export default function Impressoes() {
             dataHora: "23/06/2023 15:15",
             status: "Pendente",
             isChecked: false
-        }*/
+        }
     ]);
     
     const handleFirstCheckboxChange = () => {
         const updatedImpressoes = impressoes.map((impressao, index) => {
             // Atualiza o estado isChecked de todas as impressoes
             return {
-            ...impressao,
-            isChecked: !impressao.isChecked
+                ...impressao,
+                isChecked: !impressao.isChecked
             };
         });
     
         setImpressoes(updatedImpressoes);
-        setVerifySelectAll(verifySelect);
-        //verifySelect();
+        //setVerifySelectAll(verifySelect);
+        verifySelect();
       };
     
       function handleCheckboxChange(index){
         const updatedImpressoes = impressoes.map((impressao, i) => {
-            
+            console.log("laço: "+ i);
             if (i === index) {
+                console.log("Muda uma só");
                 return {
-                ...impressao,
-                isChecked: !impressao.isChecked
-              
+                    ...impressao,
+                    isChecked: !impressao.isChecked
                 };
             } else {
+                console.log("Deixou igual");
                 return impressao;
             }
         });
-    
+        
         setImpressoes(updatedImpressoes);
-        setVerifySelectAll(verifySelect);
-        //verifySelect();
+        verifySelect();
+        //setVerifySelectAll(verifySelect);
+        
       };
 
       function verifySelect() {
+        impressoes.forEach((impressao, i) => {
+            if(!impressao.isChecked){
+                setVerifySelectAll(true);
+                return;
+            }
+            setVerifySelectAll(false);
+        });
         
+        /*
         const verify = impressoes.every((impressao) => impressao.isChecked);
         console.log(verify);
         if (verify) {
             setVerifySelectAll(false);
-        }else{
-            setVerifySelectAll(true);
         }
+        else{
+            setVerifySelectAll(true);
+        }*/
       }
 
     return(
@@ -681,6 +692,7 @@ export default function Impressoes() {
                             handleCheckboxChange={handleCheckboxChange}
                             contador={index}
                             />
+
                         ))}
                     </tbody>
                 </table>
