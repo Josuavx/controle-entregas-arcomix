@@ -17,6 +17,8 @@ export default function Impressao({ impressao, handleCheckboxChange, contador })
     } = impressao;
     
     return(
+        
+
         <tr class="linha">
             <td class="firsttd"><input id="check" type="checkbox" checked={isChecked} onChange={() => handleCheckboxChange(contador)}/></td>
             <td>{codSolicitacao}</td>

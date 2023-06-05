@@ -38,19 +38,19 @@
 }
 
 .impressoes::-webkit-scrollbar {
-    width: 8px; /* Largura da barra de rolagem */
+    width: 8px;
 }
 
 .impressoes::-webkit-scrollbar-track {
-    background: #ffffff; /* Cor do fundo da trilha da barra de rolagem */
+    background: #ffffff;
 }
 
 .impressoes::-webkit-scrollbar-thumb {
-background:#012C71; /* Cor do "polegar" da barra de rolagem */
+background:#012C71; 
 }
 
 .impressoes::-webkit-scrollbar-thumb:hover {
-background: #044dc2; /* Cor do "polegar" da barra de rolagem ao passar o mouse */
+background: #044dc2; 
 }
 
 .impressoes::-webkit-scrollbar-thumb:active {

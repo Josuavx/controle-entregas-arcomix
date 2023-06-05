@@ -1,0 +1,73 @@
+.CadFornecedor_container {
+  width: fit-content;
+  height: fit-content;
+}
+
+.CadFornecedor_container h1 {
+  color: white;
+}
+
+.formulario-fornecedor {
+  width: 100%;
+  margin-left: 5%;
+
+}
+
+.inputBox {
+  padding: 18px;
+  margin: 5px;
+  height: 10px;
+  border: #5f5f5f 1.5px solid;
+  outline: none;
+  border-radius: 12px;
+  cursor: text;
+}
+
+.inputBoxLOG {
+  width: 81%;
+  padding: 18px;
+  margin: 5px;
+  height: 10px;
+  border: #5f5f5f 1.5px solid;
+  outline: none;
+  border-radius: 12px;
+  cursor: text;
+}
+
+.inputBoxUF {
+  width: 14%;
+  padding: 18px;
+  margin: 5px;
+  height: 10px;
+  border: #5f5f5f 1.5px solid;
+  outline: none;
+  border-radius: 12px;
+  cursor: text;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.formulario-fornecedor button {
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+  height: 8px;
+  width: 25%;
+  margin-left: 34%;
+  background-color: #CC252B;
+  color: #fff;
+  border: #551c1c 1.5px solid;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.formulario-fornecedor button p {
+  margin: -7px;
+}

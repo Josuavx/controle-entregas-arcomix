@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './impressoes.css';
+import Header from '../../Components/header/Header';
 import Impressao from '../../Components/Impressao/Impressao';
+import Footer from '../../Components/footer/Footer';
 
 export default function Impressoes() {
     const [verifySelectAll, setVerifySelectAll] = useState(false);
@@ -641,13 +643,31 @@ export default function Impressoes() {
       };
 
       function verifySelect() {
-        impressoes.forEach((impressao, i) => {
-            if(!impressao.isChecked){
-                setVerifySelectAll(true);
-                return;
-            }
-            setVerifySelectAll(false);
-        });
+        var resultado = false;
+        try{
+            impressoes.forEach((impressao, i) => {
+                console.log(impressao.isChecked);
+                if(impressao.isChecked){
+                    resultado = false;
+                    console.log("Uma deu false");
+                    throw "2";
+
+                    //setVerifySelectAll(true);
+                }else{
+                    console.log("Setou true");
+                    resultado = true;
+                    
+                }
+                /*else {
+                    console.log("Setou false");
+                    setVerifySelectAll(false);
+                }*/
+            });
+        }catch(e){
+            console.log("Acabou!");
+        }
+
+        setVerifySelectAll(resultado);
         
         /*
         const verify = impressoes.every((impressao) => impressao.isChecked);
@@ -661,42 +681,46 @@ export default function Impressoes() {
       }
 
     return(
-        <div class="imp">
-            <nav className="navegacao">
-                <button>Impressão</button>
-                <button>Visualizar</button>
-                <button>Filtro</button>
-            </nav>
-            <div class="impressoes">
-                <table>
-                    <thead>
-                        <tr>
-                            <th id="firstth"><input type="checkbox" checked={verifySelectAll} onChange={handleFirstCheckboxChange}/></th>
-                            <th>Cód. solicitação</th>
-                            <th>Motorista</th>
-                            <th>Mod. Veículo</th>
-                            <th>Placa</th>
-                            <th>Observação</th>
-                            <th>Tipo</th>
-                            <th>Unidades</th>
-                            <th>Pedidos</th>
-                            <th>Data e hora da entrega</th>
-                            <th id="lastth">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {impressoes.map((impressao, index) => (
-                            <Impressao
-                            key={index}
-                            impressao={impressao}
-                            handleCheckboxChange={handleCheckboxChange}
-                            contador={index}
-                            />
-
-                        ))}
-                    </tbody>
-                </table>
+        <div>
+            <Header/>
+            <div class="imp">
+                
+                <nav className="navegacao">
+                    <button>Impressão</button>
+                    <button>Visualizar</button>
+                    <button>Filtro</button>
+                </nav>
+                <div class="impressoes">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="firstth"><input type="checkbox" checked={verifySelectAll} onChange={handleFirstCheckboxChange}/></th>
+                                <th>Cód. solicitação</th>
+                                <th>Motorista</th>
+                                <th>Mod. Veículo</th>
+                                <th>Placa</th>
+                                <th>Observação</th>
+                                <th>Tipo</th>
+                                <th>Unidades</th>
+                                <th>Pedidos</th>
+                                <th>Data e hora da entrega</th>
+                                <th id="lastth">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {impressoes.map((impressao, index) => (
+                                <Impressao
+                                key={index}
+                                impressao={impressao}
+                                handleCheckboxChange={handleCheckboxChange}
+                                contador={index}
+                                />
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
             </div>
+            <Footer/>
         </div>
     )
 
