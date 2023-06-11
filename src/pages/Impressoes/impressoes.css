@@ -8,16 +8,30 @@
 }
 
 .navegacao button {
-    margin-left: 8px;
+    
     background: #012C71;
     border: none;
     border-left: solid 1px white;
     color: white;
     font-weight: bold;
+    height: 100%;
+    cursor: pointer;
 }
 
 .navegacao button:last-child {
     border-right: solid 1px white;
+}
+
+.navegacao a:first-child {
+    margin-left: 8px;
+}
+
+.navegacao a {
+    margin-left: -1px;
+    background: darkred;
+    height: 100%;
+    cursor: pointer;
+    width: px;
 }
 
 .imp {

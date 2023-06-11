@@ -3,6 +3,7 @@ import './impressoes.css';
 import Header from '../../Components/header/Header';
 import Impressao from '../../Components/Impressao/Impressao';
 import Footer from '../../Components/footer/Footer';
+import { Link } from 'react-router-dom';
 
 export default function Impressoes() {
     const [verifySelectAll, setVerifySelectAll] = useState(false);
@@ -617,28 +618,23 @@ export default function Impressoes() {
         });
     
         setImpressoes(updatedImpressoes);
-        //setVerifySelectAll(verifySelect);
         verifySelect();
       };
     
       function handleCheckboxChange(index){
         const updatedImpressoes = impressoes.map((impressao, i) => {
-            console.log("laço: "+ i);
             if (i === index) {
-                console.log("Muda uma só");
                 return {
                     ...impressao,
                     isChecked: !impressao.isChecked
                 };
             } else {
-                console.log("Deixou igual");
                 return impressao;
             }
         });
         
         setImpressoes(updatedImpressoes);
         verifySelect();
-        //setVerifySelectAll(verifySelect);
         
       };
 
@@ -646,49 +642,29 @@ export default function Impressoes() {
         var resultado = false;
         try{
             impressoes.forEach((impressao, i) => {
-                console.log(impressao.isChecked);
                 if(impressao.isChecked){
                     resultado = false;
-                    console.log("Uma deu false");
                     throw "2";
-
-                    //setVerifySelectAll(true);
                 }else{
-                    console.log("Setou true");
                     resultado = true;
-                    
                 }
-                /*else {
-                    console.log("Setou false");
-                    setVerifySelectAll(false);
-                }*/
             });
         }catch(e){
-            console.log("Acabou!");
         }
-
         setVerifySelectAll(resultado);
-        
-        /*
-        const verify = impressoes.every((impressao) => impressao.isChecked);
-        console.log(verify);
-        if (verify) {
-            setVerifySelectAll(false);
-        }
-        else{
-            setVerifySelectAll(true);
-        }*/
       }
 
     return(
         <div>
             <Header/>
             <div class="imp">
-                
                 <nav className="navegacao">
-                    <button>Impressão</button>
-                    <button>Visualizar</button>
-                    <button>Filtro</button>
+                    <Link to="/visualizar">
+                        <button>Impressão</button>
+                    </Link>
+                    <Link to="/visualizar">
+                        <button>Visualizar</button>
+                    </Link>
                 </nav>
                 <div class="impressoes">
                     <table>

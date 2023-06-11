@@ -6,11 +6,11 @@ import Opcadastro from './pages/CombinacaoOp/combinacaoOp';
 import Combinacaofornecedor from './pages/CadFornecedor/combinacaoCadFornecedor';
 import Combinacaofuncionario from './pages/CadFuncionario/combinacaoCadFuncionario';
 import Arcomix from './pages/Arcomix/Arcomix';
+import Visualizar from './Components/visualizarImpressao/visualizar';
 //import Problemas from './pages/Problemas/Problemas';
 
 function App() {
   return (
-    
       <Router>
         <Routes>
           <Route path="/" element={<Index/>}/>
@@ -19,6 +19,7 @@ function App() {
           <Route path="/cFuncionario" element={<Combinacaofuncionario/>}/>
           <Route path="/Arcomix" element={<Arcomix/>}/>
           <Route path="/Impressoes" element={<Impressoes/>}/>
+          <Route path="/visualizar" element={<Visualizar/>}/>
         </Routes>
       </Router>
   );
