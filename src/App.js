@@ -7,6 +7,7 @@ import Combinacaofornecedor from './pages/CadFornecedor/combinacaoCadFornecedor'
 import Combinacaofuncionario from './pages/CadFuncionario/combinacaoCadFuncionario';
 import Arcomix from './pages/Arcomix/Arcomix';
 import Visualizar from './Components/visualizarImpressao/visualizar';
+import Fornecedor from './pages/Fornecedor/Fornecedor';
 //import Problemas from './pages/Problemas/Problemas';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Arcomix" element={<Arcomix/>}/>
           <Route path="/Impressoes" element={<Impressoes/>}/>
           <Route path="/visualizar" element={<Visualizar/>}/>
+          <Route path="/fornecedor" element={<Fornecedor/>}/>
         </Routes>
       </Router>
   );

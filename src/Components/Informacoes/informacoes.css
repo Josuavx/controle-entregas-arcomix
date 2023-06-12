@@ -1,0 +1,20 @@
+.impressoes {
+  background: #d9d9d9;
+  width: 90%;
+  height: 615px;
+  margin: 6px auto;
+  border-radius: 15px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.cabecalhoInformacoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #012C71;
+  color:#FFF;
+  height: 50px;
+  border-radius: 15px 15px 0 0;
+}
+

@@ -1,7 +1,7 @@
 #body {
   width: 99%;
   height: 100%;
-  background: rgb(238, 87, 87);
+  background: rgb(255, 255, 255);
   border: solid black 2px
 }
 
@@ -77,9 +77,14 @@ ul li {
   color: #000000;
 }
 
+#liTopo li{
+  font-size: 16px;
+  border: solid black 1px;
+}
+
 #listas {
-  background: darkblue;
-  color: white;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   display: flex;
   justify-content:space-around;
 }
@@ -88,12 +93,4 @@ ul li {
   border: solid black 1px;
   padding-right: 30vw;
   padding-left: 8px;
-}
-
-.lista1 {
-  
-}
-
-.lista2 {
-
 }
