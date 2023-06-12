@@ -1,0 +1,188 @@
+    #confirmarExclusãoButton {
+    text-align: center;
+    background-color: #42CA2C;
+    color: #ffffff;
+    border: none;
+    margin-right: 50px;
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  #cancelarExclusãoButton {
+    text-align: center;
+    background-color: #ED3A27;
+    color: #ffffff;
+    border: none;
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  #alterar, #impressora {
+    margin-left: 10px;
+    margin-right: 8px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background-color: #2688C6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 900px;
+    height: 500px;
+    margin: auto;
+  }
+  
+  .modal-content-editar {
+    background-color: #2688C6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 900px;
+    height: 350px;
+    margin: auto;
+  }
+  
+  .modal-content-exclusao{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 900px;
+    height: 120px;
+    margin: auto;
+  }
+  
+  .close-button {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .modal-header, .modal-header-exclusao {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    width: 900px;
+    background-color: #012C71;
+    color: #FFF;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+  
+  }
+  
+  .modal-header-exclusao h2{
+    margin-left: 270px ;
+  }
+  
+  
+  .modal-header h2 {
+    font-family: Inter;
+    border-left: 1px solid #fff;
+    font-size: 32px;
+    padding-left: 15px;
+  }
+  
+  .back-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 35px;
+  }
+  
+  .modal-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    flex-grow: 1;
+  }
+  
+  .input-wrapper input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    flex: 1;
+  }
+  
+  .input-wrapper .date-input, .imput-wrapper .time-input {
+    width: 50%;
+    color: #777;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .input-wrapper label {
+    color: #FFF;
+    margin-right: 3px;
+    width: 190px;
+    font-weight: bold;
+    background-color: #009CFF;
+    padding: 6px;
+    border-radius: 3px;
+  }
+  
+  .selecionar-data-container {
+    margin-bottom: 20px;
+  }
+  
+  .button.selecionado {
+    background-color: #001e4d; 
+    color: white;
+  }
+
+  .modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.enviarButton {
+  margin-top: 390px;
+  margin-left: 700px;
+  background-color: #012C71;
+  color: #FFF;
+  border-radius: 10px;
+  width: 175px;
+  height: 40px;
+}
+
+.checkbox-item{
+  color: #fff;
+}

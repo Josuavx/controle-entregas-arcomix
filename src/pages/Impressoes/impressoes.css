@@ -1,6 +1,6 @@
 .navegacao {
     background-color: #012C71;
-    width: 90vw;
+    width: 100%;
     height: 41px;
     margin: 4px auto;
     border-radius: 5px;
@@ -8,28 +8,81 @@
 }
 
 .navegacao button {
-    margin-left: 8px;
+    
     background: #012C71;
     border: none;
     border-left: solid 1px white;
     color: white;
     font-weight: bold;
+    height: 100%;
+    cursor: pointer;
 }
 
 .navegacao button:last-child {
     border-right: solid 1px white;
 }
 
+.navegacao a:first-child {
+    margin-left: 8px;
+}
+
+.navegacao a {
+    margin-left: -1px;
+    background: darkred;
+    height: 100%;
+    cursor: pointer;
+    width: px;
+}
+
+.imp {
+    width: 92%;
+    margin: auto;
+}
+
 .impressoes {
     background: rgba(217, 217, 217, 1);
-    width: fit-content;
+    width: calc(99.7% - 3px);
     height: 590px;
     margin: 6px auto;
     border-radius: 10px;
+    border-top-right-radius: 24px;
+    display: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.impressoes::-webkit-scrollbar {
+    width: 8px;
+}
+
+.impressoes::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+.impressoes::-webkit-scrollbar-thumb {
+background:#012C71; 
+}
+
+.impressoes::-webkit-scrollbar-thumb:hover {
+background: #044dc2; 
+}
+
+.impressoes::-webkit-scrollbar-thumb:active {
+    background: #0464ff;
+}
+
+.impressoes thead {
+    position: sticky;
+    top: 0;
+}
+
+.impressoes thead > th + th {
+    border-left: 2px solid white;
 }
 
 .impressoes table {
-    width: 90vw;    
+    width: 91vw;
+    border-collapse: collapse;
 }
 
 .impressoes th {

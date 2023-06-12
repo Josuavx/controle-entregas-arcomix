@@ -1,0 +1,44 @@
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #cfcfcf;
+    height: 50px;
+    max-width: 725px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.button{
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button, .solicitarButton {
+    background-color: #012C71;
+    color: #FFF;
+    border-radius: 10px;
+    width: 175px;
+    height: 40px;
+}
+
+.solicitarButton{
+    margin: 240px -715px 0 auto;
+    font-size: 30px;
+}
+
+.plusButton {
+    font-size: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+.imgButton {
+    max-width: 30px;
+    width: auto;
+    margin-left: 5px;
+}
