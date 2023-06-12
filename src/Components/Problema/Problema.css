@@ -1,0 +1,23 @@
+#card{
+  width: 325px;
+  height: 100px;
+  background-color: #012C71;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+
+.header-card{
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+#description{
+  overflow: hidden;
+  margin-top: 9px;
+  text-align: left;
+}

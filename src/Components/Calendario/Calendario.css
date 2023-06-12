@@ -1,0 +1,107 @@
+.page{
+  display: flex;
+  width: 100%;
+}
+
+.calendario {
+  font-family: Arial, sans-serif;
+  max-width: 720px;
+  height: 555px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  margin: 7px 50px 0 auto; /* Margem superior, esquerda, inferior, direita */
+}
+
+.cabecalho {
+  width: 720px;
+  height: 40px;
+  display: flex;
+  color: #fff;
+  margin-bottom: 1px;
+  align-items: center;
+  background-color: #CC252B;
+  border: 1px solid #9e9e9e;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  justify-content: space-between;
+}
+
+.cabecalho h2 {
+  font-family: Inter;
+  margin-left: -240px;
+  margin-right: -220px;
+  text-align: center; /* Centralizar o texto */
+}
+
+.cabecalho button {
+  background: none;
+  padding-right: 8.2px;
+  padding-left: 6px;
+  border-radius: 50%;
+  font-size: 25px;
+  cursor: pointer;
+  border-color: #fff;
+  color: #F6DC06;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.dias-semana {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  margin-bottom: 60px;
+  max-width: 700px;
+}
+
+.dias-semana .dia-semana {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background-color: #696868;
+  border: 1px solid #9e9e9e;
+}
+
+.dias-mes {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  max-width: 700px;
+}
+
+.dias-mes .dia {
+  background-color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  border: 1px solid #9e9e9e;
+  transition: background-color 0.2s;
+  max-width: 100px;
+}
+
+.dias-mes .dia:hover {
+  background-color: #ccc;
+}
+
+.dia.selecionado{
+  background-color: #012C71;
+  color: #fff;
+}
+
+.dia.selecionado:hover {
+  background-color: #012C71;
+}
+
+.dias-mes .dia.menos-visivel {
+  background-color: #fff;
+  opacity: 50%;
+}
+
+.dias-mes .dia-mes {
+  background-color: #fff;
+}
+ 

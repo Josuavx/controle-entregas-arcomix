@@ -1,0 +1,59 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    color: #fff;
+    background-color: #012C71;
+    margin-top: 10px;
+    border-radius: 15px;
+    width: 98%;
+    height: 120px;
+    margin-left: 1%;
+    font-size: large;
+    overflow: hidden;
+    transition: 0.5s linear;
+    height: 80px;
+    position: relative;
+  }
+  
+  .card.expanded {
+    height: 165px;
+  }
+  
+  .card p {
+    width: 95%;
+    box-sizing: border-box;
+    margin-left: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  
+  .lastp {
+    font-weight: bold;
+  }
+  
+  .expand-button,
+  .minimize-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  
+  .minimizarButton {
+    max-width: 40px;
+    background-color: #012C71;
+    display: block;
+    margin-top: 10px;
+    border: none;
+    position: absolute;
+    right: 3px;
+  }
+
+  .setaImg {
+    background-color: none;
+    max-width: 40px;
+    right: 5px;
+    top: 5px;
+  }
