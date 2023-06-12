@@ -60,9 +60,9 @@ export default function Calendario() {
   const diaFimMes = diaInicioMes + diasDoMes;
 
   const [diaSelecionado, setDiaSelecionado] = useState(null);
+  const [modoSelecaoAno, setModoSelecaoAno] = useState(false);
 
   const handleDiaClick = (dataCompleta) => {
-
     if (dataCompleta !== diaSelecionado) {
       setDiaSelecionado(dataCompleta);
     }
@@ -74,9 +74,19 @@ export default function Calendario() {
     return dataFormatada;
   };
 
-  return (
-    <div className = "page">
+  const handleSelecionarAno = (anoSelecionado) => {
+    setAno(anoSelecionado);
+    setModoSelecaoAno(false);
+  };
 
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      handleSelecionarAno(parseInt(event.target.value));
+    }
+  };
+
+  return (
+    <div className="page">
       <div className="ladoEsquerdo">
         <Informacoes diaSelecionado={diaSelecionado} />
       </div>
@@ -86,7 +96,18 @@ export default function Calendario() {
           <div className="cabecalho">
             <button onClick={handleMesAnterior}>&lt;</button>
             <h2>{mesesDoAno[mes - 1]}</h2>
-            <h2>{ano}</h2>
+            {modoSelecaoAno ? (
+              <input
+                type="number"
+                value={ano}
+                onChange={(event) => setAno(parseInt(event.target.value))}
+                onBlur={() => setModoSelecaoAno(false)}
+                onKeyDown={handleKeyDown}
+                autoFocus
+              />
+            ) : (
+              <h2 onClick={() => setModoSelecaoAno(true)}>{ano}</h2>
+            )}
             <button onClick={handleProximoMes}>&gt;</button>
           </div>
           <div className="dias-semana">
@@ -147,8 +168,8 @@ export default function Calendario() {
         </div>
         <Botoes/>
       </div>
-
     </div>
   );
 };
+
 
