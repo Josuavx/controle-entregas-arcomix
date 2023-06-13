@@ -5,6 +5,7 @@ import impressora from './../imgs/impressoraSimples.png';
 import alterar from './../imgs/alterar.png';
 import lixo from './../imgs/lixo.png';
 import './Botoes.css';
+import { Link } from 'react-router-dom';
 
 export default function Botoes() {
   const [exibirModalExclusao, setExibirModalExclusao] = useState(false);
@@ -48,21 +49,23 @@ export default function Botoes() {
         <img className="imgButton" id="lixo" src={lixo} alt="lixo" />
         Cancelar Solicitação
       </button>
-
+      
       <button className="button" onClick={handleSolicitarEntrega}>
         <img className="imgButton" id="alterar" src={alterar} alt="alterar" />
         Alterar Entrega
       </button>
-
-      <button className="button">
-        <img
-          className="imgButton"
-          id="impressora"
-          src={impressora}
-          alt="impressora"
-        />
-        Imprimir Entrega
-      </button>
+      
+      <Link to="/visualizar">
+        <button className="button">
+          <img
+            className="imgButton"
+            id="impressora"
+            src={impressora}
+            alt="impressora"
+          />
+          Imprimir Entrega
+        </button>
+      </Link>
 
       {exibirModalExclusao && <ModalExclusao onClose={fecharModal} />}
       {exibirModalSolicitar && <ModalSolicitar onClose={fecharModal} />}

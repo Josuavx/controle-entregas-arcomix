@@ -1,0 +1,72 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  color: #fff;
+  background-color: transparent;
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 675px;
+  margin-left: 1%;
+  font-size: large;
+  overflow: hidden;
+  transition: 0.5s linear;
+  height: 80px;
+  position: relative;
+}
+
+.card.expanded {
+  height: 185px;
+}
+
+.card p {
+  width: 95%;
+  box-sizing: border-box;
+  margin-left: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.lastp {
+  font-weight: bold;
+}
+
+.expand-button,
+.minimize-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.minimizarButton {
+  max-width: 40px;
+  background-color: transparent;
+  display: block;
+  margin-top: 10px;
+  border: none;
+  position: absolute;
+  right: 3px;
+}
+
+.setaImga {
+  background-color: transparent;
+  max-width: 40px;
+  right: 5px;
+  top: 5px;
+}
+
+.card.verde {
+  background-color: #42CA2C;
+  color: white;
+}
+
+.card.azul {
+  background-color: #2688C6;
+  color: white;
+}
+
+.card.vermelho {
+  background-color: #CC252B;
+  color: white;
+}

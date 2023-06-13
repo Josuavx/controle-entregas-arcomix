@@ -25,8 +25,10 @@ function login() {
                     <input type="password" placeholder='* * * * * * * * * *'></input>
 
                     <br />
-                    <Link to="/Arcomix"><button type='submit' class="btnEntrar"><p>Entrar</p></button></Link> 
+                    <Link to="/Arcomix"><button type='submit' class="btnEntrar"><p>Entrar</p></button></Link>
+                    <Link to="/fornecedor"><button type='submit' class="btnEntrar"><p>Fornecedor</p></button></Link> 
                     <Link to="/opcadastro"><button type='submit'  class="btnCadastro"><p>Cadastro</p></button></Link>
+                    
                 </form>
             </div>
         </div>   

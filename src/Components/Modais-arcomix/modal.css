@@ -14,7 +14,7 @@
     background-color: #ED3A27;
     color: #ffffff;
     border: none;
-    width: 40%;
+    width: 45%;
     height: 40px;
     border-radius: 10px;
   }
@@ -79,12 +79,12 @@
     margin-top: -20px;
     margin-bottom: 10px;
     margin-left: -20px;
-    width: calc(100% + 40px);
+    width: 900px;
     background-color: #012C71;
     color: #FFF;
     padding: 20px 0;
     border-radius: 10px 10px 0 0;
-    height: 1px;
+  
   }
   
   .modal-header-exclusao h2{
@@ -111,7 +111,7 @@
   .modal-body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1%;
+    grid-gap: 20px;
     flex-grow: 1;
   }
   
