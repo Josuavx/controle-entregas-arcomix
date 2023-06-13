@@ -1,6 +1,7 @@
 import React from 'react';
 import './visualizarImpressao.css';
 import logoInteiro from '../../Components/imgs/arco-mix-logo-inteiro.png'
+import { Link } from 'react-router-dom';
 
 export default function visualizar() {
     /*const impressoes = [
@@ -21,6 +22,11 @@ export default function visualizar() {
         <div id="body">
             <div>
                 <img id="logo-inteiro" src={logoInteiro} alt="logo inteiro"/>
+                <Link to="/Impressoes">
+                    <button class="sair">
+                        X
+                    </button>
+                </Link>
             </div>
             <div id='topo'>
                 <h1 id='controle'>Cliente</h1>
