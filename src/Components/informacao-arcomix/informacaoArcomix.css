@@ -1,4 +1,4 @@
-.card {
+.cardArco {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
@@ -6,20 +6,20 @@
   background-color: transparent;
   margin-top: 10px;
   border-radius: 15px;
-  width: 675px;
+  width: 100%;
   margin-left: 1%;
   font-size: large;
   overflow: hidden;
   transition: 0.5s linear;
-  height: 80px;
+  height: 90px;
   position: relative;
 }
 
-.card.expanded {
-  height: 185px;
+.cardArco.expanded {
+  height: 200px;
 }
 
-.card p {
+.cardArco p {
   width: 95%;
   box-sizing: border-box;
   margin-left: 3px;
@@ -40,7 +40,7 @@
 }
 
 .minimizarButton {
-  max-width: 40px;
+  max-width: 60px;
   background-color: transparent;
   display: block;
   margin-top: 10px;
@@ -56,17 +56,17 @@
   top: 5px;
 }
 
-.card.verde {
+.cardArco.verde {
   background-color: #42CA2C;
   color: white;
 }
 
-.card.azul {
+.cardArco.azul {
   background-color: #2688C6;
   color: white;
 }
 
-.card.vermelho {
+.cardArco.vermelho {
   background-color: #CC252B;
   color: white;
 }

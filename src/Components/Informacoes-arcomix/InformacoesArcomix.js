@@ -1,6 +1,6 @@
 import React from 'react';
-import './informacoes.css';
-import Informacao from '../../Components/informacao-arcomix/informacao';
+import './informacoesArcomix.css';
+import InformacaoArcomix from '../informacao-arcomix/informacaoArcomix';
 
 export default function Informacoes({ diaSelecionado }) {
   const informacoes = [
@@ -45,9 +45,9 @@ export default function Informacoes({ diaSelecionado }) {
         <div className='cabecalhoInformacoes'>
           <h1>{dia}</h1>
         </div>
-        <table>
+        <table class="tabelaArco">
           {informacoesFiltradas.map((impressao, index) => (
-            <Informacao
+            <InformacaoArcomix
               key={index}
               razaoSocial={impressao.razaoSocial}
               status={impressao.status}

@@ -8,7 +8,8 @@ import Combinacaofuncionario from './pages/CadFuncionario/combinacaoCadFuncionar
 import Arcomix from './pages/Arcomix/Arcomix';
 import Visualizar from './Components/visualizarImpressao/visualizar';
 import Fornecedor from './pages/Fornecedor/Fornecedor';
-//import Problemas from './pages/Problemas/Problemas';
+import Pesquisa from './pages/Pesquisa/Pesquisa';
+import Problemas from './pages/Problemas/Problemas';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/Impressoes" element={<Impressoes/>}/>
           <Route path="/visualizar" element={<Visualizar/>}/>
           <Route path="/fornecedor" element={<Fornecedor/>}/>
+          <Route path="/pesquisa" element={<Pesquisa/>}/>
+          <Route path="/problemas" element={<Problemas/>}/>
         </Routes>
       </Router>
   );

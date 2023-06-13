@@ -14,7 +14,7 @@ export default function Footer() {
             <div id="foot">
                 <button id="botao-seta" class="botao-redirect"><img src={Seta} id="imagem-retorno" alt='seta retorno'/></button>
                 <Link to="/Arcomix"><button class="botao-redirect"><img src={Calendario} class="img-btn" alt="icone calendario"/>Agenda</button></Link>
-                <Link to=""><button class="botao-redirect"><img src={Lupa} class="img-btn" alt="icone lupa"/>Pesquisar</button></Link>
+                <Link to="/pesquisa"><button class="botao-redirect"><img src={Lupa} class="img-btn" alt="icone lupa"/>Pesquisar</button></Link>
                 <Link to="/Impressoes"><button class="botao-redirect"><img src={Impressora} class="img-btn" alt="icone impressao"/>Impressão</button></Link>
             </div>
         </footer>
