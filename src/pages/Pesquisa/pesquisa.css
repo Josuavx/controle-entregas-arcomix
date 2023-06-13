@@ -1,0 +1,234 @@
+
+    .container {
+    display: flexbox;
+    justify-content: space-between;
+  }
+  
+  .form-containerP {
+    width: 100%;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #017133;
+    height: 10%;
+  }
+  .imagemP{
+    background-color: #012C71;
+    max-width:15% ;
+    max-height: 10%;
+    width: 15%;
+    height: 10%;
+    border-radius: 100%;
+  }
+  #fotoP{
+    margin-top: 45px;
+    margin-left: 45px;
+    border-radius: 100%;
+    width: 100px;
+    object-fit: contain;
+  }
+  
+  .formP {
+    background-color: #012C71;
+    display: flex;
+    color: #ffffff;
+    max-width: 100%;
+    height:100%;
+    font-weight: bold;
+  }
+  .org-formP{
+    display: flex;
+    flex-direction: column;
+  }
+  #div1{
+    background-color: #012C71;
+    width: 50%;
+  }
+  #div1 label{
+    margin-left: 10px;
+  }
+  #div1 input{
+    width: 50%;
+    border-radius: 5px;
+    border: solid black 0.5px;
+  }
+  #div1 #telefones{
+    width: 22%;
+  }
+  #div1 #telefones1{
+    width: 25%;
+  }
+  #div1 div #nome{
+    margin-left: 12px;
+  }
+  #div1 div #razaoSocial{
+    margin-left: 4px;
+  }
+  #div1 div #logradouro{
+    margin-left: 9px;
+  }
+  #div2 div #cidade{
+    margin-left: 35px;
+  }
+  #div1 div #cnpj{
+    margin-left: 59px;
+  }
+  #div1 div #telefones{
+    margin-left: 27px;
+  }
+  #div1 div #telefones1{
+    margin-left: 5px;
+  }
+  #div2 div #segmento{
+    margin-left: 10px;
+  }
+  #div2 div #bairro{
+    margin-left: 40px;
+  }
+  #div2 div #cep{
+    margin-left: 58px;
+  }
+  #div2 div #email{
+    margin-left: 45px;
+  }
+  #div1:nth-child(0){
+    width: 100%;
+  }
+  #div2{
+    background-color:  #012C71;
+    width: 50%;
+  }
+  #div2 label{
+    margin-left: 10px;
+  }
+  #div2 input{
+    width: 50%;
+    border-radius: 5px;
+    border: solid black 0.5px;
+  }
+  .labelPesquisa {
+
+    margin-bottom: 10px;
+  }
+  
+  .textP,
+  .emailP {
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 10px;
+  } 
+  
+.ProblemasP {
+    margin-bottom: 5px;
+    margin-left: 100px;
+    background-color: #ce3419;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+.navegacaoP {
+    background-color: #012C71;
+    width: 100%;
+    height: 41px;
+    margin: 4px auto;
+    border-radius: 5px;
+    display: inline-flex;
+}
+
+.navegacaoP button {
+    
+    background: #012C71;
+    border: none;
+    border-left: solid 1px white;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    cursor: pointer;
+}
+
+.navegacaoP button:last-child {
+    border-right: solid 1px white;
+}
+
+.navegacaoP a:first-child {
+    margin-left: 8px;
+}
+
+.navegacaoP a {
+    margin-left: -1px;
+    background: darkred;
+    height: 100%;
+    cursor: pointer;
+    width: px;
+}
+
+.impP {
+    width: 92%;
+    margin: auto;
+}
+
+.impressoesP {
+    background: rgba(217, 217, 217, 1);
+    width: calc(99.7% - 3px);
+    height: 360px;
+    margin: 6px auto;
+    border-radius: 5px;
+    border-top-right-radius: 24px;
+    display: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.impressoesP::-webkit-scrollbar {
+    width: 8px;
+}
+
+.impressoesP::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+.impressoesP::-webkit-scrollbar-thumb {
+background:#012C71; 
+}
+
+.impressoesP::-webkit-scrollbar-thumb:hover {
+background: #044dc2; 
+}
+
+.impressoesP::-webkit-scrollbar-thumb:active {
+    background: #0464ff;
+}
+
+.impressoesP thead {
+    position: sticky;
+    top: 0;
+}
+
+.impressoesP thead > th + th {
+    border-left: 2px solid white;
+}
+
+.impressoesP table {
+    width: 91vw;
+    border-collapse: collapse;
+}
+
+.impressoesP th {
+    padding: 0.25%;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border-left: solid white 2px;
+    background: #012C71;
+}
+
+#firstthP {
+    border-top-left-radius: 10px;
+    border-left: none;
+}
+
+#lastthP {
+    border-top-right-radius: 10px;
+    border-right: none;
+}

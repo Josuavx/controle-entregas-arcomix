@@ -1,7 +1,7 @@
 import setaCima from './../imgs/seta-cima.png';
 import setaBaixo from './../imgs/seta-baixo.png';
 import React, { useState } from 'react';
-import './informacao.css';
+import './informacaoArcomix.css';
 
 export default function Informacao({razaoSocial, status, cnpj, modVeiculo, nomeMotorista, placa, data}) {
 
@@ -29,7 +29,7 @@ export default function Informacao({razaoSocial, status, cnpj, modVeiculo, nomeM
   };
 
   return(
-    <div className={`card ${expanded ? 'expanded' : 'minimized'} ${corClasse}`}>
+    <div className={`cardArco ${expanded ? 'expanded' : 'minimized'} ${corClasse}`}>
       <button className="minimizarButton" onClick={handleExpand}>
         {expanded ? 
           <img className="setaImga" id='setaCima' src={setaCima} alt="setaCima"/>: 

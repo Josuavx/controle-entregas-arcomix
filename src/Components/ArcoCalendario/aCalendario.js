@@ -1,10 +1,10 @@
-import Informacoes from "../Informacoes-arcomix/Informacoes";
+import InformacoesArcomix from "../Informacoes-arcomix/InformacoesArcomix";
 import Anotacoes from "../Anotacoes/Anotacoes";
 import React, { useState } from "react";
 import { ptBR } from 'date-fns/locale';
 import Botoes from "../Botoes/Botoes";
 import { format } from 'date-fns';
-import "./Calendario.css";
+import "./aCalendario.css";
 
 export default function Calendario() {
   const [ano, setAno] = useState(new Date().getFullYear());
@@ -89,7 +89,7 @@ export default function Calendario() {
   return (
     <div className="page">
       <div className="ladoEsquerdo">
-        <Informacoes diaSelecionado={diaSelecionado} />
+        <InformacoesArcomix diaSelecionado={diaSelecionado} />
         <Anotacoes/>
       </div>
 

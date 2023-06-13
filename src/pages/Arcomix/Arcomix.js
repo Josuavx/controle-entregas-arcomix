@@ -1,4 +1,4 @@
-import Calendario from '../../Components/aCalendario/Calendario'
+import Calendario from '../../Components/ArcoCalendario/aCalendario'
 import Header from '../../Components/header/Header'
 import Footer from '../../Components/footer/Footer'
 

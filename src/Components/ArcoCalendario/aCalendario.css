@@ -4,6 +4,7 @@
 }
 
 .calendario {
+  margin-left: 30px;
   font-family: Arial, sans-serif;
   max-width: 720px;
   height: 555px;
@@ -118,4 +119,11 @@
   color:#fff;
   border: none;
 }
- 
+
+.ladoEsquerdo{
+  width: 50%;
+ }
+
+.ladoDireito{
+  width: 50%;
+}
